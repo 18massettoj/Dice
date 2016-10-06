@@ -9,8 +9,8 @@ void setup()
 void draw()
 {
   int total= 0;
-  for (int y = 30; y<400; y+= 150){
-    for (int x = 40; x<400; x+= 150){
+  for (int y = 30; y<400; y+= 95){
+    for (int x = 40; x<400; x+= 90){
       Die one = new Die(x,y);
       one.show();
       one.roll();
@@ -43,7 +43,7 @@ class Die
   }
   void roll()
   {  
-    int rectSize = 100;
+    int rectSize = 80;
     int el = 12;
     if (num == 1){
       fill(0);
@@ -87,7 +87,7 @@ class Die
   }
   void show()
   {
-    int rectSize = 100;
+    int rectSize = 80;
     noStroke();
     fill(255);
     rect(myX,myY,rectSize,rectSize);
